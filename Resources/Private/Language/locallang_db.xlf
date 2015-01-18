@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+	<file t3:id="1419914820" source-language="en" datatype="plaintext" original="messages" date="2011-10-17T20:22:32Z" product-name="felogin">
+		<header/>
+		<body>
+			<trans-unit id="showinpreview.0" xml:space="preserve">
+				<source>Show only in full news</source>
+			</trans-unit>
+			<trans-unit id="showinpreview.1" xml:space="preserve">
+				<source>Show in preview + full</source>
+			</trans-unit>
+			<trans-unit id="showinpreview.2" xml:space="preserve">
+				<source>Show only in preview</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
