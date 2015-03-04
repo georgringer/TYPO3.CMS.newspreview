@@ -1,0 +1,8 @@
+{
+	"name": "georgringer/newspreview",
+	"type": "typo3-cms-extension",
+	"description": "Additional options for 'show in preview' checkbox of a news",
+	"homepage": "https://github.com/georgringer/ext-easyvote_location",
+	"license": ["GPL-2.0+"],
+	"version": "1.0.0"
+}
