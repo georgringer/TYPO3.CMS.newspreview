@@ -1,6 +1,9 @@
 <?php
 
-class Tx_Newspreview_Domain_Model_News extends Tx_News_Domain_Model_News {
+namespace GeorgRinger\Newspreview\Domain\Model;
+
+
+class News extends \GeorgRinger\News\Domain\Model\News {
 
 	/**
 	 * @return array
@@ -17,9 +20,9 @@ class Tx_Newspreview_Domain_Model_News extends Tx_News_Domain_Model_News {
 	}
 
 	protected function getFalMediaPreviewsByType($type) {
+		$items = array();
 		if ($this->getFalMedia()) {
-			$items = array();
-			/** @var $mediaItem Tx_News_Domain_Model_FileReference */
+			/** @var $mediaItem \GeorgRinger\News\Domain\Model\Media */
 			foreach ($this->getFalMedia() as $mediaItem) {
 				if ((int)$mediaItem->getOriginalResource()->getProperty('showinpreview') === $type) {
 					$items[] = $mediaItem;
@@ -29,6 +32,3 @@ class Tx_Newspreview_Domain_Model_News extends Tx_News_Domain_Model_News {
 		return $items;
 	}
 }
-
-
-?>
